@@ -1,17 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class SpaceshipInteract : MonoBehaviour
 {
-    public AudioSource interactNoise;
+    public AudioSource spaceshipWhine;
 
-    private void OnTriggerEnter(Collider other)
+    private XRGrabInteractable grabInteractable;
+
+    private void Awake()
     {
-        if (other.gameObject.tag == "Interactor") {
-            {
-                interactNoise.Play();
-            } 
+        grabInteractable = GetComponent<XRGrabInteractable>();
+        grabInteractable.onSelectEntered.AddListener(OnSelectEntered);
+    }
+
+    private void OnSelectEntered(XRBaseInteractor interactor)
+    {
+        if (spaceshipWhine != null)
+        {
+            spaceshipWhine.Play();
         }
     }
 }
+
+
