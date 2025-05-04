@@ -4253,6 +4253,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelving_Traditional (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1613087731036193593, guid: fc29def7fd957db4085fce30f5fcefcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2101217376417896835, guid: fc29def7fd957db4085fce30f5fcefcc,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -11533,6 +11538,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelving_Traditional (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1613087731036193593, guid: fc29def7fd957db4085fce30f5fcefcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2101217376417896835, guid: fc29def7fd957db4085fce30f5fcefcc,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -16099,6 +16109,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelving_Modern_Gray
       objectReference: {fileID: 0}
+    - target: {fileID: 5420631304709469590, guid: 9cba3f19103249f49a089c693f633e19,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16113,7 +16128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 676896155}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: wallshelves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19450,6 +19465,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelving_Traditional
       objectReference: {fileID: 0}
+    - target: {fileID: 1613087731036193593, guid: fc29def7fd957db4085fce30f5fcefcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2101217376417896835, guid: fc29def7fd957db4085fce30f5fcefcc,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -22486,6 +22506,7 @@ GameObject:
   - component: {fileID: 920921512}
   - component: {fileID: 920921515}
   - component: {fileID: 920921516}
+  - component: {fileID: 920921517}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -22505,7 +22526,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1323053162}
   m_Father: {fileID: 650672842}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &920921512
@@ -22731,10 +22753,25 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1
+  m_Radius: 0.25
+  m_Height: 0.25
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &920921517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920921510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f4ec53744de2004ea00a664bbca4d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _detector: {fileID: 1323053161}
+  _characterController: {fileID: 1313711685}
+  pushBackStrength: 1
 --- !u!1001 &944231154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23035,6 +23072,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 381302922, guid: d9470993b9bd0a541a884d6f6704a421, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 472198468225971865, guid: d9470993b9bd0a541a884d6f6704a421,
         type: 3}
       propertyPath: m_Name
@@ -23104,6 +23145,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812496790419091512, guid: d9470993b9bd0a541a884d6f6704a421,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094713249064622096, guid: d9470993b9bd0a541a884d6f6704a421,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430152558404011643, guid: d9470993b9bd0a541a884d6f6704a421,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5589277602629562673, guid: d9470993b9bd0a541a884d6f6704a421,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6470914648387029666, guid: d9470993b9bd0a541a884d6f6704a421,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803313389024695174, guid: d9470993b9bd0a541a884d6f6704a421,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23651,7 +23722,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 975116853}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: wallshelves (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23828,6 +23899,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kitchen_1Drawers (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c1963d89f58959b4e83b3f2a45e2aded,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: c1963d89f58959b4e83b3f2a45e2aded,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27179,10 +27260,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 930110057651265036, guid: f290f489f4196974db7a37718d9fa4c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2253933154729072759, guid: f290f489f4196974db7a37718d9fa4c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2656637177849538046, guid: f290f489f4196974db7a37718d9fa4c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465886719854800525, guid: f290f489f4196974db7a37718d9fa4c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4623551795540180000, guid: f290f489f4196974db7a37718d9fa4c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 6188505525709655194, guid: f290f489f4196974db7a37718d9fa4c3,
         type: 3}
       propertyPath: m_Name
       value: Table_Dining_Traditional_Dark
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188505525709655194, guid: f290f489f4196974db7a37718d9fa4c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461166169162395676, guid: f290f489f4196974db7a37718d9fa4c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6821313309137376800, guid: f290f489f4196974db7a37718d9fa4c3,
         type: 3}
@@ -27233,6 +27349,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900701677609508938, guid: f290f489f4196974db7a37718d9fa4c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8249027825405646254, guid: f290f489f4196974db7a37718d9fa4c3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27288,6 +27414,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Table_Coffee_Modern
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569003152108605924, guid: a35b0267215e7e946a2a8f481f48fbbc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2201671572489931614, guid: a35b0267215e7e946a2a8f481f48fbbc,
         type: 3}
@@ -28268,6 +28399,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kitchen_1Drawers (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c1963d89f58959b4e83b3f2a45e2aded,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: c1963d89f58959b4e83b3f2a45e2aded,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28350,6 +28491,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shelving_Traditional (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613087731036193593, guid: fc29def7fd957db4085fce30f5fcefcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2101217376417896835, guid: fc29def7fd957db4085fce30f5fcefcc,
         type: 3}
@@ -29501,6 +29647,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kitchen_3Drawers
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 06fd13b08800e9149abcafc61558e935,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 06fd13b08800e9149abcafc61558e935,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31039,6 +31195,7 @@ GameObject:
   - component: {fileID: 1313711684}
   - component: {fileID: 1313711682}
   - component: {fileID: 1313711683}
+  - component: {fileID: 1313711685}
   m_Layer: 0
   m_Name: XR Rig
   m_TagString: Untagged
@@ -31152,6 +31309,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ActionAssets:
   - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!143 &1313711685
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313711679}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 0
+  m_Radius: 0.2
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1318294766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31447,6 +31630,55 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1323053160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1323053162}
+  - component: {fileID: 1323053161}
+  m_Layer: 0
+  m_Name: Detector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1323053161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323053160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de694ef62b7e343479ad960c536c6e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _detectionDelay: 0.05
+  _detectionDistance: 0.2
+  _detectionLayers:
+    serializedVersion: 2
+    m_Bits: 4096
+--- !u!4 &1323053162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323053160}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 920921511}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1341269507
 GameObject:
   m_ObjectHideFlags: 0
@@ -35264,6 +35496,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelving_Traditional (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1613087731036193593, guid: fc29def7fd957db4085fce30f5fcefcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2101217376417896835, guid: fc29def7fd957db4085fce30f5fcefcc,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -38868,6 +39105,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kitchen_Oven
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1b098c728fc76cc448181a2d8450421b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 1b098c728fc76cc448181a2d8450421b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44746,6 +44993,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kitchen_Fridge
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 50cc4eed8536ebf47824244c3ca9ce64,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 50cc4eed8536ebf47824244c3ca9ce64,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45380,6 +45637,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shelving_Traditional
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613087731036193593, guid: fc29def7fd957db4085fce30f5fcefcc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2101217376417896835, guid: fc29def7fd957db4085fce30f5fcefcc,
         type: 3}
@@ -48028,6 +48290,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kitchen_1Drawers
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c1963d89f58959b4e83b3f2a45e2aded,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: c1963d89f58959b4e83b3f2a45e2aded,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48750,10 +49022,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kitchen_Sink
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 268ccb35f3e79864d9611507bf10342c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 268ccb35f3e79864d9611507bf10342c,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 268ccb35f3e79864d9611507bf10342c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50824,6 +51106,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1267891483827487970, guid: 722b1b7a0e745d2469164df319981cca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603289957354805973, guid: 722b1b7a0e745d2469164df319981cca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 4191744769842034511, guid: 722b1b7a0e745d2469164df319981cca,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -50878,6 +51170,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5267714202160175202, guid: 722b1b7a0e745d2469164df319981cca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703109887092875492, guid: 722b1b7a0e745d2469164df319981cca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8276209156970108487, guid: 722b1b7a0e745d2469164df319981cca,
         type: 3}
